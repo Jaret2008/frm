@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="logou.png">
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navegar">
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+            <button class="btnforms-popup">Forms</button>
+        </nav>
+    </header>
+
+    <div class="forms">
+        <span class="salir">
+            <ion-icon name="close"></ion-icon>
+        </span>
+
+        <!-- Primera Sección -->
+        <div class="numberone">
+            <h2 class="1ertitle">Completa estas casillas</h2>
+            <br><br>
+            <div class="info">
+                <span class="icon">
+                    <ion-icon name="checkmark-done-circle"></ion-icon>
+                </span>
+                <input type="text" required>
+                <label>Nombres</label>
+            </div>
+            <br>
+            <div class="info">
+                <span class="icon">
+                    <ion-icon name="checkmark-done-circle"></ion-icon>
+                </span>
+                <input type="text" required>
+                <label>Apellidos</label>
+            </div>
+            <br>
+            <div class="despegable">
+                <select name="des" id="des">
+                    <option value="usb">USB</option>
+                    <option value="paralelo">Paralelo</option>
+                    <option value="ps2">PS2</option>
+                </select>
+            </div>
+            <br>
+            <div class="op">
+                <div>
+                    <input type="radio" id="english" value="english" name="language" checked>
+                    <label for="english">English</label>
+                    <img src="reino-unido.png" id="sp">
+                </div>
+                <div>
+                    <input type="radio" id="español" value="español" name="language">
+                    <label for="español">Español</label>
+                    <img src="espana.png" id="sp">
+                </div>
+                <div>
+                    <input type="radio" id="deutsch" value="deutsch" name="language">
+                    <label for="deutsch">Deutsch</label>
+                    <img src="alemania.png" id="sp">
+                </div>
+                <div>
+                    <input type="radio" id="français" value="français" name="language">
+                    <label for="français">Français</label>
+                    <img src="francia.png" id="sp">
+                </div>
+                <div>
+                    <input type="radio" id="português" value="português" name="language">
+                    <label for="português">Português</label>
+                    <img src="portugal.png" id="sp">
+                </div>
+            </div>
+            <br>
+            <div class="next">
+                <button id="next">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Segunda Sección -->
+        <div class="numbertwo">
+            <h2 class="1ertitle">Indica tus Preferencias</h2>
+            <br>
+            <div class="check">
+                <input type="checkbox" id="hombre" value="hombre">
+                <label for="hombre">Hombre</label>
+                <ion-icon name="man"></ion-icon>
+                <br>
+                <input type="checkbox" id="mujer" value="mujer">
+                <label for="mujer">Mujer</label>
+                <ion-icon name="woman"></ion-icon>
+            </div>
+            <br>
+            <select class="slc" multiple name="sexo" id="sexo">
+                <option value="h">Hombre</option>
+                <option value="m">Mujer</option>
+            </select>
+            <br><br>
+            <div class="fecha">
+                <label for="date">Elija una fecha:</label>
+                <input type="date" id="date">
+            </div>
+            <br>
+            <div class="fichero">
+                <label for="avatar">Elija un fichero</label>
+                <input type="file" id="avatar" accept="image/png, image/jpeg">
+            </div>
+            <br>
+            <div class="procesador">
+                <input type="radio" id="amd" value="amd" name="procesador" checked>
+                <label for="amd">AMD</label>
+                <img src="amd.png" id="mrc">
+                <input type="radio" id="intel5" value="intel5" name="procesador">
+                <label for="intel5">Intel i5</label>
+                <img src="inteli5.png" id="mrc">
+                <input type="radio" id="intel7" value="intel7" name="procesador">
+                <label for="intel7">Intel i7</label>
+                <img src="inteli7.png" id="mrc">
+            </div>
+            <br>
+            <div class="next2">
+                <button id="next2">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Tercera Sección -->
+        <div class="numberthree">
+            <h2 class="1ertitle">Información Adicional</h2>
+            <br><br>
+            <div class="info">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <br>
+            <div class="info">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label>Contraseña</label>
+            </div>
+            <br>
+            <div class="op">
+                <div>
+                    <input type="radio" id="matematica" value="matematica" name="materia" checked>
+                    <label for="matematica">Matemáticas</label>
+                    <ion-icon name="calculator"></ion-icon>
+                </div>
+                <div>
+                    <input type="radio" id="historia" value="historia" name="materia">
+                    <label for="historia">Historia</label>
+                    <ion-icon name="hourglass"></ion-icon>
+                </div>
+                <div>
+                    <input type="radio" id="geografía" value="geografía" name="materia">
+                    <label for="geografía">Geografía</label>
+                    <ion-icon name="earth"></ion-icon>
+                </div>
+                <div>
+                    <input type="radio" id="lengua" value="lengua" name="materia">
+                    <label for="lengua">Lengua</label>
+                    <ion-icon name="language"></ion-icon>
+                </div>
+            </div>
+            <br>
+            <div class="next3">
+                <button id="next3">Siguiente</button>
+            </div>
+        </div>
+
+        <!-- Cuarta Sección -->
+    <div class="numberfour">
+            <h2 class="1ertitle">Elige tus preferencias</h2>
+            <br>
+            <div class="col">
+                <label>Elija un Color</label>
+                <input type="color">
+            </div>
+                <br>
+            <div class="txt">
+                <textarea rows="6" cols="40">Utilice este cuadro para escribir</textarea>
+            </div>
+                 <br>
+            <div class="despegable">
+                <select name="des" id="des">
+                    <option value="usb">English</option>
+                    <option value="paralelo">Aleman</option>
+                    <option value="ps2">Spanish</option>
+                </select>
+            </div>           
+                <br>
+            <div class="hora">
+                <label >Elija la Hora</label>
+                <input type="time">
+            </div>
+                <br>
+        <div class="next4">
+            <button id="next4">Siguiente</button>
+        </div>
+    </div>
+
+
+            <!-- Quinta Sección -->
+        <div class="numberfive">
+            <h2 class="1ertitle">Ultimas opciones</h2>
+                <br>
+                <div class="despegable">
+                    <select name="des" id="des">
+                        <option value="js">Java</option>
+                        <option value="py">Phyton</option>
+                        <option value="html">HTML</option>
+                        <option value="vb">Visual Basic</option>
+                    </select>
+                </div>
+                <br>
+                <div class="check">
+                    <input type="checkbox" id="asir" value="asir">
+                    <label for="asir">ASIR</label>
+                        <br>
+                    <input type="checkbox" id="dam" value="dam">
+                    <label for="dam">DAM</label>
+                        <br>
+                    <input type="checkbox" id="daw" value="daw">
+                    <label for="daw">DAW</label>
+                </div>
+                <br> 
+                <select class="slc" multiple name="sexo" id="opcion">
+                    <option value="sm">SMIR</option>
+                    <option value="as">ASIR</option>
+                    <option value="dm">DAM</option>
+                    <option value="dw">DAW</option>
+                </select>
+                <br> <br>
+                <div class="submit">
+                    <button id="submit">Enviar</button>
+                </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
